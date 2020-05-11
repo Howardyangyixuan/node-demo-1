@@ -1,0 +1,59 @@
+.hearts {
+  display: flex;
+  justify-content: center;
+  animation: bump 0.5s infinite alternate;
+}
+.heart {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+@keyframes bump {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+.hearts {
+  transition: all 0.5s;
+}
+.heart:hover {
+  transform: rotate(-45deg) scale(1.5, 1.5);
+}
+.heart > .red {
+  background: red;
+}
+.reg {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
+.regn {
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.regn > div {
+  width: 25px;
+  height: 25px;
+}
+.bh {
+  background: black;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+}
+.left {
+  transform: translateY(50%);
+}
+.right {
+  transform: translateX(-50%);
+}
